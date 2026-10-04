@@ -218,3 +218,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# LinguaBot: local environment variants; commit only sanitized examples
+.env.*
+!.env.example
+!.env.*.example
+
+# LinguaBot: local SSH credentials and default private key filenames
+.ssh/
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# LinguaBot: local editor settings
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# LinguaBot: generated frontend dependencies and coverage (framework-neutral)
+node_modules/
+coverage/
+
+# LinguaBot: operating system metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
